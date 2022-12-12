@@ -1,0 +1,13 @@
+html
+    head 
+        title CRUD
+    body 
+        h1 Users List 
+        a(href="/users-form") Open Form 
+
+        ul 
+        each user, index in users
+            li= `Name: ${user.name} - Phone: ${user.phone} - Children: ${user.children}`
+            form(action=`/delete/${index}`, method="GET")
+                button(type="submit") Delete 
+            a(href=`/users-edit/${index}`) Edit or Add Children 

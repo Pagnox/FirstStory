@@ -1,0 +1,10 @@
+html 
+    head 
+        title CRUD 
+    body 
+        h1 Edit User 
+        form(action=`/edit/${index}`, method="POST")
+            input(type="text", value=user.name, name="name", placeholder="Name")
+            input(type="text", value=user.phone, name="phone", placeholder="Phone")
+            input(type="text", value=user.children, name="children", placeholder="Children")
+            button(type="submit") Submit

@@ -1,0 +1,9 @@
+html 
+    head 
+        title CRUD
+    body
+        h1 Users Form 
+        form(action="/submit", method="POST")
+            input(type="text", name="name", placeholder="Name")
+            input(type="text", name="phone", placeholder="Phone")
+            button(type="submit") Submit
